@@ -1,0 +1,76 @@
+
+
+// Sample user data
+const sampleUser = {
+    username: "john_doe",
+    // ... other user properties
+  };
+  
+  // Sample link data
+  const sampleLink = {
+    title: "Sample Link",
+    url: "https://example.com",
+  };
+  
+  // Sample comment data
+  const sampleComment = {
+    user: sampleUser,
+    question: "What is the course about?",
+    questionReplies: [
+      {
+        user: sampleUser,
+        question: "It covers a variety of topics. Can you be more specific?",
+      },
+      // ... other replies
+    ],
+  };
+  
+  // Sample review data
+  const sampleReview = {
+    user: sampleUser,
+    rating: 4,
+    comment: "Great course, highly recommended!",
+    commentReplies: [
+      {
+        user: sampleUser,
+        comment: "I'm glad you enjoyed it!",
+      },
+      // ... other replies
+    ],
+  };
+  
+  // Sample course data
+  const sampleCourseData = {
+    title: "Sample Course",
+    description: "An example course description.",
+    videoUrl: "https://example.com/video",
+    videoThumbnail: { public_id: "thumbnail_id", url: "https://example.com/thumbnail" },
+    videoSection: "Introduction",
+    videoLength: 60, // in minutes
+    videoPlayer: "SamplePlayer",
+    links: [sampleLink],
+    suggestion: "Recommended for beginners.",
+    questions: [sampleComment],
+  };
+  
+  // Sample course data (full course)
+  const sampleCourse = {
+    name: "Full Stack Web Development",
+    description: "Learn to build web applications from front to back.",
+    categories: "Web Development",
+    price: 49.99,
+    estimatedPrice: 59.99,
+    thumbnail: { public_id: "course_thumbnail_id", url: "https://example.com/course_thumbnail" },
+    tags: "HTML, CSS, JavaScript",
+    level: "Intermediate",
+    demoUrl: "https://example.com/demo",
+    benefits: [{ title: "Lifetime Access" }, { title: "Certificate of Completion" }],
+    prerequisites: [{ title: "Basic HTML/CSS knowledge" }],
+    reviews: [sampleReview],
+    courseData: [sampleCourseData],
+    ratings: 4.5,
+    purchased: 100,
+  };
+  
+  // This is just an example. Actual data would be stored in a database.
+  
